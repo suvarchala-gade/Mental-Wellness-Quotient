@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="template.css"> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200;400;600&family=Lora:ital,wght@0,500;1,400&family=Merriweather:ital,wght@1,700&family=Oswald:wght@300;500&family=PT+Serif:ital,wght@1,400;1,700&family=Playfair+Display+SC:ital@1&family=Playfair+Display:ital,wght@1,800&family=Poppins:ital,wght@1,300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+                <a class="navbar-brand fs-4 text-white " id="brand">MENTAL WELLNESS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+                    <i class="bx bx-menu text-white bx-md"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white fs-5" href="index.html" target="_main"><i class="fa-solid fa-house"></i>  Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link mx-3 text-white fs-5" href="">Log-out</a>
+                    </li> 
+                </ul>
+                </div>
+        
+            <!-- </div> -->
+        </nav>
+    </header>
+    
+    <div class="container text-center">
+        <div id="board">
+            <br>
+            <h1 class="dash">Dashboard</h1>
+        </div>
+        <br><br>
+        <div class="row" >
+            <div class="col-md-1 col-sm-12"></div>
+            <div class="col-md-10 col-sm-12 text-center" id="admin-box">
+                <h2  id="admin-head"><i class="fa-solid fa-user"></i>  ADMIN</h2>
+                <br><br>
+                <p style="font-family: 'Lora', serif;">Send a message to notify the parents,teachers and students to take the test</p>
+                <a href="#message" class="btn btn-info " role="button" id="send-view1">Send Message</a>
+                <br><br>
+                <p style="font-family: 'Lora', serif;">Click the below button to check the Happiness Quotient of your Institute</p>
+                <!-- <button type="button" class="btn btn-info " onclick="location.href='admin2.html'">Check HQ</button> -->
+                <a href="admin2.html" class="btn btn-info " role="button" id="send-view2">View MWQ</a>
+                <br><br>
+            </div>
+            <div class="col-md-1 col-sm-12"></div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- Message Area -->
+    <section id="message">
+        <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12"></div>
+                        <div class="col-md-8 col-sm-12" id="admin-message">
+                                <br>
+                                <h2 id="msg"><i class="fa-solid fa-envelopes-bulk"></i>  MESSAGE</h2><br><br>
+                                <form action="">
+                                    <textarea name="msg" id="msg" rows="10" placeholder="Drop Your Message" class="form-control"></textarea>
+                                    <br>
+                                    <input type="checkbox" name="category" id="stud"> 
+                                    <label for="stud">Student</label><br>
+                                    <input type="checkbox" name="category" id="par">
+                                    <label for="par">Parents</label><br>
+                                    <input type="checkbox" name="category">
+                                    <label for="tea">Teachers</label>
+                                    <br><br>
+                                    <a href="#" class="btn btn-success fs-5" role="button" id="admin-send">Send</a>
+                                    <br><br>
+                                </form>
+                        </div>
+                        <div class="col-md-2 col-sm-12"></div>
+                    </div>
+            </div>
+         </div>
+    </section>
+
+   
+    <br><br><br><br><br>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+   
+</body>
+</html>
